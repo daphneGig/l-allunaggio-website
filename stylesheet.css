@@ -1,0 +1,708 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*****FINE CSS RESET*****/
+/*QUI INIZIA IL DIVERTIMENTO*/
+/************TAG GENERICI*************/
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  /* colore sfondo */ 
+  ::-webkit-scrollbar-track {
+	background: #020711; 
+  }
+  /* colore barretta */
+  ::-webkit-scrollbar-thumb {
+	background:  #ffc600;
+	border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+	background: #e28b3c;
+  }  
+body {
+	font-family: 'Bai Jamjuree',sans-serif;
+	color:#fff;
+	background-color: #020711;
+}
+hgroup{
+	margin-bottom: 40px;
+}
+h1 {
+	font-family: 'Orbitron',sans-serif;
+	font-weight: bold;
+	font-size: 70px;
+	color: #ffc600;
+	margin-bottom: 40px;
+	text-shadow: 2px 2px 2px #020711; 
+}
+h2 {
+	font-family: 'Bai Jamjuree',sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 2px #020711; 
+}
+h3 {
+	font-family: 'Orbitron',sans-serif;
+	font-weight: bold;
+	font-size: 60px;
+	color: #ffc600;
+	position: absolute;
+	bottom: -7px;
+	z-index: 5;
+}
+h4 {
+	font-family: 'Orbitron',sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	color: #ffc600;
+	margin-bottom: 30px;
+}
+h5 {
+	font-family: 'Orbitron',sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 30px;	
+}
+h6 {
+	font-family: 'Bai Jamjuree',sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #ffc600;
+	margin-bottom: 15px;
+}
+a {
+	text-decoration: none;
+	color:#fff;
+	transition: all 400ms ease-in-out;
+}
+a.pulsante:hover{
+	background-color:#ffc600;}
+
+p {
+	margin-bottom: 40px;
+	line-height: 20px;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+/************SPAN*************/
+.bianco {color:#fff}
+.giallo {color:#ffc600}
+.corsivo {font-style: italic;}
+
+/************CLASSI VALIDE PER PIU PAGINE*************/
+.copertina { 
+	background-color: #020711;
+	height: 980px;
+	width: 100%;
+	background-repeat: no-repeat; 
+	background-size: cover;
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+		-o-background-size: cover;
+	background-attachment: fixed;
+}
+.container-copertina {
+	width:1110px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 266px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.container-pulsante{
+	width: 100%;
+	text-align: center;
+	height: 35px;
+	padding-top: 19px;
+	margin-bottom: 40px;
+}
+.pulsante{
+	font-family: 'Bai Jamjuree',sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	background-color: #e28b3c;
+	border-radius: 10px;
+	padding: 17px 30px;
+	margin-bottom: 57px;
+	margin-top: 17px;
+}
+.section-storta{
+	background-color: #020711;
+  	width: 100%;
+ 	height: 898px;
+  	-webkit-transform: skew(0, -5deg) translateY(calc(50vw/-11.43));
+    -ms-transform: skew(0, -5deg) translateY(calc(50vw/-11.43));
+    transform: skew(0, -5deg) translateY(calc(50vw/-11.43));
+}
+.section-storta-778 { 
+	width: 100%;
+ 	height: 778px;
+  	-webkit-transform: skew(0, -5deg) translateY(calc(50vw/-11.43));
+    -ms-transform: skew(0, -5deg) translateY(calc(50vw/-11.43));
+    transform: skew(0, -5deg) translateY(calc(50vw/-11.43));
+	background-color: #020711;
+}
+.container-h3 {
+	width: 1110px;
+	padding-left: 30px;
+	padding-right: 30px;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	position:relative;
+}
+.wrapper-storto {
+	width:100%;
+	height: 778px;
+	overflow: hidden;
+}
+.img-section {
+	-webkit-transform: skew(0, 5deg) translateY(calc(50vw/-11.43));
+    -ms-transform: skew(0, 5deg) translateY(calc(50vw/-11.43));
+    transform: skew(0, 5deg) translateY(calc(50vw/-11.43));
+	padding-top: 200px;
+	height: 778px;
+	background-repeat: no-repeat; 
+	background-size: cover;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	
+}
+.container-section {
+	width: 1110px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+	height: auto;
+}
+.card-6col-dx {
+	float:right;;
+	width: 480px;
+	background-color: #00253c;
+	max-height: 452px;
+	padding:40px 30px 0px;
+	border-radius: 10px;
+}
+.card-6col-sx {
+	float:left;
+	width: 480px;
+	background-color: #00253c;
+	max-height: 452px;
+	padding:40px 30px 0px;
+	border-radius: 10px;
+}
+.card-4col-sx {
+	float:left;
+	width: 290px;
+	background-color: #00253c;
+	max-height: 452px;
+	padding:40px 30px 0px;
+	border-radius: 10px;
+	margin-right: 30px;
+}
+.card-4col-sx:last-child{
+	margin-right: 0px;
+}
+.card-3col-sx {
+	float:left;
+	width: 195px;
+	max-height: 502px;
+	padding:40px 30px 0px;
+	border-radius: 10px;
+	margin-right: 30px;
+}
+.card-3col-sx:last-child{
+	margin-right: 0px;
+}
+.card-img-dx{
+	border-radius: 10px;
+	position: relative;
+	left: 380px;
+	z-index:-1;
+}
+.card-img-sx{
+	border-radius: 10px;
+	position: relative;
+	z-index:-1;
+}
+.margin-top-50 {
+	margin-top:50px;
+}
+/* inserire tutte le classi card sopra a questa classe .trans */	
+.trans {
+	background-color: rgba(0,37,60,0.70) }
+/************MENU'*************/
+#wrapper-nav {
+	width: 100%;
+	height: 80px;
+	background-color: rgba(2,7,17,0.6);
+	position:absolute;
+	top: 0;
+	z-index: 1000;
+}
+#container-nav {
+	width:1110px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: auto;
+	overflow: auto;
+}
+#logo-nav {
+	height: 60px;
+	width: 285px;
+	float:left;
+}
+#voci-menu-nav {
+	float:right;
+	padding-top:21px;
+	padding-bottom: 21px;
+	font-size: 18px;
+	font-family: 'Orbitron',sans-serif;
+	font-weight: bold;
+}
+#voci-menu-nav ul li {
+	margin-left: 40px;
+	display: inline;	
+}
+#voci-menu-nav ul li:first-child {
+	margin-left:0px;
+}
+#voci-menu-nav ul li a:hover {
+	color: #ffc600;
+}
+/************HOMEPAGE*************/
+#container-home-header {
+	padding-top: 200px;
+	text-align: center;
+}
+#wrapper-header-home {
+	background-image:url(img/moonlanding-home-cover.jpg);
+	background-position: center center;
+}
+#container-home-header hgroup {
+	text-shadow: 2px 2px 2px #020711; 
+}
+/****Section le nostre birre****/
+#section-img1-home {
+	background-image:url(img/beer-astronuts-home-le-birre.jpg);
+	background-position: center 20%;
+}
+/****Section i prossimi eventi****/
+#section-img2-home {
+	background-image:url(img/moon-colorized-home-prossimi-eventi.jpg);
+	background-position: center center;
+}
+.card-4col-sx-eventihome h4 {
+	padding-top: 175px;
+	line-height: 30px;
+	color:#FFFFFF;
+	transition: all 400ms ease-in-out;
+}
+.card-4col-sx-eventihome h4:hover{
+	color: #ffc600;
+}
+.card-4col-sx-eventihome {
+	height: 260px;
+	background-repeat: no-repeat; 
+}
+#cardevent-center {
+	background-image: url(img/astrosamantha-evento-2.jpg);
+	margin-bottom: 40px;
+}
+#cardevent-left {
+	background-image: url(img/lancio-parabola.jpg);
+}
+#cardevent-right {
+	background-image: url(img/luna-rossa_evento3.jpg);
+}
+/****Section Dove trovarci****/
+#section-img3-home {
+	background-image:url(img/earth-and-moon-home-dovesiamo.jpg);
+	background-position: center center;
+}
+/******BIRRIFICIO******/
+#wrapper-header-birrificio {
+	background-image: url("img/header-birrificio.jpg");
+	background-position: center top;
+}
+#section1-img-birrificio {
+	background-image: url("img/imgbirrificio.jpg");
+	background-position: center center;
+}
+#section2-img-birrificio {
+	background-image: url("img/imgfasibirra.jpg");
+	background-position: center 55%;
+	padding-top: 160px;
+}
+.card-birrificio {
+	float: left;
+	height: 93px;
+	width: 137px;
+	padding: 30px;
+	border-radius: 10px;
+	margin-right: 20px;
+}
+.card-birrificio p {
+	margin-bottom: 0px;
+}
+.h4-fasi-produttive {
+	font-weight: 400;
+	font-size: 14px;
+	color: #ffc600;
+	margin-bottom: 0px;
+}
+#card1-birrificio {
+	margin-top: 540px;
+}
+#card2-birrificio{
+	margin-top: 520px;
+}
+#card3-birrificio{
+	 margin-top: 500px;
+}
+#card4-birrificio{
+	margin-top: 480px;
+}
+#card5-birrificio{
+	margin-top: 460px;
+	margin-right: 0px;
+}
+
+/********BIRRE******/
+/*Copertina*/
+#header-birre {
+	background-image: url("img/Copertina-birre.jpg");
+	background-position: center 20%; /*da rivedere*/	
+}
+/*Section 1*/
+#section1-cent-birre {
+	margin-top: 100px;
+}
+#section1-dx-birre {
+	margin-top: 200px;
+}
+
+/*LunaPiena*/
+#img-section-lunapiena {
+	background-image: url("img/LunaPiena1.jpg");
+	background-position: center center;
+}
+
+/*LunaRossa*/
+#img-section-lunarossa {
+	background-image: url("img/LunaRossa3.jpg");
+	background-position: center center;
+}
+
+/*ApolloUndici*/
+#img-section-apolloundici {
+	background-image: url("img/RazzoCheParteBackground.jpg");
+	background-position: center top;
+}
+
+/*DoppioBalzo*/
+#img-section-doppiobalzo {
+	background-image: url("img/BuzzAldrin.jpg");
+	background-position: center top;
+}
+
+/*Tondini specs delle birre*/
+.specs-birre {
+	width: 100%;
+	margin-bottom: 40px;
+}
+.specs-tondino {
+	width: 63px;
+	height: 63px;
+	background-color: #e28b3c;
+	border-radius: 100%;
+	display: inline-block;
+	text-align: center;
+	margin-right: 30px;
+}
+.testo-tondino {
+	width: 63px;
+	border-radius: 100%;
+	position: relative;
+	top: 50%;
+	margin-top: -17.5px;
+}
+
+/*Sezione Cucina - della pagina birre*/
+#card-overimg-birre {
+	margin-top: 50px;
+}
+#img-cucina-birre { /*per ogni immagine bisogna fare i calcoli: altezza della card di testo + 50px*/
+	top: -284px; 
+}
+/******CUCINA******/
+#wrapper-header-cucina{
+	background-image: url("img/header-cucina.jpg");
+	background-position: center top;
+}
+#card1-img-cucina {
+	top: -427px;
+}
+#card2-img-cucina {
+	top: -331px;
+}
+#section3-img-cucina{
+	background-image: url("img/astronautamangia.jpg");
+	background-position: center top;
+}
+/****** EVENTI *******/
+#header-eventi {
+	background-image: url("img/Copertina_Eventi.jpg");
+	background-position: center top;
+}
+/*Section 1 eventi*/
+#img-section1-eventi {
+	background-image: url("img/Birrificio_sfondo_eventi.jpg");
+	background-position: center center;
+}
+/*Section 2 eventi*/
+#section-2-eventi {height: 998px;}
+#wrapper-storto-2-eventi {height: 878px;}
+#container-section-2-eventi {height: 878px;}
+#section-2-eventi .card-4col-sx {max-height: 502px;} /*queste cose le ho aggiunte perché se no non ci stavano le card. quest'ultima rende le card più proporzionate (i contenuti uscivano)*/
+.img-card-eventi {
+	margin-top: -40px;
+	margin-left: -30px;
+	margin-bottom: 30px;
+    border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+/*Section 3 eventi*/
+#img-section3-eventi {
+	top: -318px;
+}
+/************QUIZ*************/
+.contenitore-immagine-contenuto-premi{
+	width: 350px;
+	background-color: #00253c;
+	overflow:hidden;
+	float: left;
+	border-radius: 10px;
+	margin-right: 30px;
+	margin-bottom: 0;
+}
+.contenitore-immagine-contenuto-premi:last-child{
+	margin-right: 0px;
+}
+.card-4col-sx-quiz {
+	float:left;
+	width: 290px;
+	background-color: #00253c;
+	max-height: 452px;
+	padding:30px 30px 0px ;
+	border-radius: 10px;
+}
+#section-black-quiz{
+	background-color: #020711;
+}
+#pulsante-quiz{
+	text-align: left;
+}
+#wrapper-header-quiz{
+	background-image: url(img/sfondo-quiz-del-mercoledi.jpg);
+	background-position: 50% 30%;
+}
+#section-img1-quiz{
+	background-image: url(img/img-quiz.jpg);
+	background-position: 50% 30%;	
+}
+/************CHI SIAMO*************/
+#wrapper-header-chisiamo {
+	background-image:url(img/moon-landscape-chisiamo-cover.jpg);
+	background-position: top center;
+}
+/****Section La nostra storia****/
+#section-img1-chisiamo {
+	background-image:url(img/lem-colorized-la-nostra-storia.jpg);
+	background-position: center center;
+}
+/****Section Timeline****/
+#container-chisiamo-timeline {
+	margin-top:250px;
+}
+.box-2col {
+	float:left;
+	width: 160px;
+	margin: 30px 30px 0px 0px;
+}
+.box-2col:last-child{
+	margin-right: 0px;
+}
+#section-img2-chisiamo p {
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 0px;
+}
+#section-img2-chisiamo h4 {
+	font-size: 36px;
+	line-height: 24px;
+	margin-bottom: 16px;
+	color:#fff;
+}
+#section-img2-chisiamo h5 {
+	font-size: 23px;
+	margin-bottom: 16px;
+}
+#section-img2-chisiamo {
+	background-image: url("img/timeline.png");
+	background-position: top center;   
+	background-size: initial;
+	background-color: #00253c;
+}
+.photo-astronauta {
+	margin:-40px -30px 30px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+/****Section il nostro equipaggio****/
+#section-img3-chisiamo {
+	background-image:url(img/moon-colorized-chisiamo-il-nostro-equipaggio.jpg);
+	background-position: center center;
+}
+/************CONTATTI*************/
+#container-copertina-contatti{
+	padding-top: 157px;
+	overflow: auto;
+	height: auto;
+}
+#container-copertina-contatti h1 {
+	font-family: 'Orbitron',sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	color: #ffc600;
+	margin-bottom: 30px;
+	text-shadow: none;
+}
+.container-h3 h2 {
+	font-family: 'Orbitron',sans-serif;
+	font-weight: bold;
+	font-size: 60px;
+	color: #ffc600;
+	position: absolute;
+	bottom: -7px;
+	z-index: 5;
+	text-shadow: none;
+}
+#sovrapposizione{
+	margin-top: 40px;
+	margin-left: -200px;
+	z-index: 50;
+	position: relative;
+}
+.copertina-contatti{
+	height: 830px;
+}
+iframe{
+	border-radius: 10px;
+	width:730px;
+	height:532px;
+	float:left;
+}
+#img-contatti-thefork{
+	top: -398px;
+}
+#section-img-contatti{
+	background-image: url(img/img-contatti.jpg);
+	background-position: 50% top;
+	
+}
+
+/************FOOTER*************/
+#section-footer {
+	height: auto;
+	margin-top: -180px;
+	z-index: -1;
+	background-color: #00253c;	
+} 
+#container-footer {
+	width: 1110px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+	height: auto;
+}
+.social-icon-footer {
+	margin-right: 30px;
+	float: left;
+}
+#info-footer {
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 60px;
+	width: 240px;
+}
+#social-footer {
+	float: left;
+	width: 240px;
+}
+#copyright-footer {
+	float: left;
+	margin-right:400px;
+}
+#info-footer p {
+	margin-bottom: 30px;
+}
+#impronta-footer {
+	margin-top: -50px;
+}
